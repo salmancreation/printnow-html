@@ -2846,16 +2846,16 @@ input.main-search-input::placeholder {
 }
 
 .hero-4 {
-  padding: 200px 0 140px;
+  padding: 140px 0 140px;
 }
 @media (max-width: 1199px) {
   .hero-4 {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 }
 @media (max-width: 991px) {
   .hero-4 {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 @media (max-width: 767px) {
