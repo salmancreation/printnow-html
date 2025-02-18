@@ -432,25 +432,3 @@
     }
   }
 
-
-
-  .reveal {
-	position: relative;
-	display: -ms-inline-flexbox;
-	visibility: hidden;
-	overflow: hidden;
-  }
-  
-  .reveal img {
-	// height: 100%;
-	// width: 100%;
-	display: inline-block;
-	-o-object-fit: cover;
-	object-fit: cover;
-	transform-origin: left;
-  }
-  
-  .image-anime {
-	position: relative;
-	overflow: hidden;
-  }

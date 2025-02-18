@@ -61,34 +61,7 @@
     });
 
     //>> Smooth Scroll Js <<//
-    function smoothSctoll() {
-        $('.smooth a').on('click', function(event) {
-            var target = $(this.getAttribute('href'));
-            if (target.length) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top - 120
-                }, 1500);
-            }
-        });
-    }
-    smoothSctoll();
-    if ($('#smooth-wrapper').length && $('#smooth-content').length) {
-        gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TweenMax, ScrollToPlugin);
-
-        gsap.config({
-            nullTargetWarn: false,
-        });
-
-        let smoother = ScrollSmoother.create({
-            smooth: 2,
-            effects: true,
-            smoothTouch: 0.1,
-            normalizeScroll: false,
-            ignoreMobileResize: true,
-        });
-
-    }
+    
 
     //>> Text Type Start <<//
     $(document).ready(function () {
@@ -567,33 +540,8 @@
         },
     });
 
-    //>> Reveal Animation <<//
-    if ($('.reveal').length) {
-        gsap.registerPlugin(ScrollTrigger);
-        let revealContainers = document.querySelectorAll(".reveal");
-        revealContainers.forEach((container) => {
-            let image = container.querySelector("img");
-            let tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: container,
-                    toggleActions: "play none none none"
-                }
-            });
-            tl.set(container, {
-                autoAlpha: 1
-            });
-            tl.from(container, 1.5, {
-                xPercent: -100,
-                ease: Power2.out
-            });
-            tl.from(image, 1.5, {
-                xPercent: 100,
-                scale: 1.3,
-                delay: -1.5,
-                ease: Power2.out
-            });
-        });
-    }
+   
+    
 
     // range sliger
     function getVals() {
