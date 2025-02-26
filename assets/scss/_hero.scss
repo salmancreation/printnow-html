@@ -2,11 +2,7 @@
    position: relative;
    z-index: 9;
    overflow: hidden;
-   padding: 265px 0 120px;
-
-   @include breakpoint (max-lg){
-        padding-top: 170px;
-   }
+   padding: 120px 0 120px;
 
     .swiper-dot-2 {
         position: absolute;
@@ -203,15 +199,14 @@
 
 .hero-2 {
     position: relative;
-    padding: 400px 0 185px;
+    padding: 185px 0 185px;
 
-    @include breakpoint (max-xxl){
-        padding-top: 300px;
+    @include breakpoint (max-xl){
+        padding: 150px 0 150px;
     }
-
-
+   
     @include breakpoint (max-sm){
-        padding: 170px 0 120px;
+        padding: 120px 0 120px;
     }
 
     .hero-bg {
@@ -471,16 +466,11 @@
 }
 
 .hero-4 {
-    padding: 330px 0 140px;
+    padding: 140px 0 140px;
 
-    @include breakpoint (max-xl){
-        padding-top: 200px;
+    @include breakpoint (max-md){
+        padding: 120px 0;
     }
-
-    @include breakpoint (max-lg){
-        padding-top: 160px;
-    }
-
 
     .hero-content {
         @include breakpoint (max-md){

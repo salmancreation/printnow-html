@@ -113,7 +113,7 @@
 
 .header-section-2 {
 	position: relative;
-	z-index: 99;
+	z-index: 9999;
 	background-color: $white;
     .container-fluid {
         padding: 0 150px;
@@ -136,12 +136,12 @@
 .header-section-1 {
 	background-color: $white;
 	position: relative;
-	z-index: 99;
+	z-index: 9999;
 }
 
 .header-section {
 	position: relative;
-	z-index: 9;
+	z-index: 9999;
 	background-color: $white;
 }
 
@@ -1152,15 +1152,6 @@
 	position: relative;
 	overflow: hidden;
 	z-index: 9;
-	padding-top: 265px;
-
-	@include breakpoint (max-xl){
-		padding-top: 230px;
-	}
-
-	@include breakpoint (max-lg){
-		padding-top: 160px;
-	}
 
 	.page-heading{
 		position: relative;
